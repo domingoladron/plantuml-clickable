@@ -2,6 +2,8 @@
 
 Source code for my Medium article "PlantUML: Adding Links to your Diagrams"
 
+https://medium.com/it-dead-inside/plantuml-adding-links-to-your-diagrams-6bf21b20e221
+
 
 ## Contains
 
