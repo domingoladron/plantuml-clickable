@@ -1,0 +1,15 @@
+@startuml
+
+Node MyMicroservice {
+    Component MyApi [[MyApi.svg]]
+    Component MyBackgroundService [[MyBackgroundService.svg]]
+    Database MyDatabase [[MyDatabase.svg]]
+}
+
+
+
+MyApi -down-> MyDatabase
+MyBackgroundService -down-> MyDatabase
+
+
+@enduml

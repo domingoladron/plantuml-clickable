@@ -1,0 +1,15 @@
+@startuml
+
+
+node MyApi {
+
+    component Controllers
+    component ApplicationServices
+    component Repositories
+
+}
+
+Controllers=>ApplicationServices
+ApplicationServices->Repositories
+
+@enduml

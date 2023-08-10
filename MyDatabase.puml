@@ -1,0 +1,24 @@
+@startuml
+
+skinparam linetype ortho
+
+entity "MyTable" as e01 {
+  * Id: number <<generated>>
+  --
+  * Name
+  * Description
+}
+
+
+entity "MyFkTable" as e02 {
+   *Id : number <<generated>>
+  --
+  *MyTable_id : number <<FK>>
+  --
+  * Name
+  * Description
+}
+
+e01 ||..o{ e02
+
+@enduml

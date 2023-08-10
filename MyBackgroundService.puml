@@ -1,0 +1,17 @@
+@startuml
+
+
+node BackgroundService {
+
+    component MessageHandlers
+
+}
+
+Node RabbitMQ [[https://www.rabbitmq.com/documentation.html]] {
+    component MyQueueEvents
+}
+
+
+MessageHandlers -right-> MyQueueEvents
+
+@enduml
